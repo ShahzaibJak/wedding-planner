@@ -1,13 +1,21 @@
-
+import { useEffect } from "react";
+import "aos/dist/aos.css";
+import AOS from "aos";
+import 'aos/dist/aos.css'
 const HowItWork = () => {
+
+    useEffect(()=>{
+
+        AOS.init()
+    },[])
     return (
         <div className="py-24">
-            <div className="pt-4 pb-8 text-center">
+            <div data-aso="fade-up" className="pt-4 pb-8 text-center">
                 <h3 className="text-xl font-bold">WHAT WE PROMISE</h3>
             <h2 className="text-[44px] font-bold ">Get Our Services at Your Door &<br/>Obey Our Rules</h2></div>
-            <div className="container mx-auto flex justify-center gap-5">
+            <div data-aso="fade-up" className="container mx-auto flex justify-center gap-5">
                 {/* 1st div */}
-                <div className=" w-[290px] bg-[#F4F7F7]">
+                <div data-aso="fade-up" className=" w-[290px] bg-[#F4F7F7]">
                     <div className="relative">
                     <img className="" src="https://live.themewild.com/loveo/assets/img/service/05.jpg" alt="" />
                     <div className="absolute bottom-[-25px] right-5">
@@ -22,7 +30,7 @@ const HowItWork = () => {
                     </div>
                 </div>
                 {/* 2nd div */}
-                <div className=" w-[290px] bg-[#F4F7F7]">
+                <div data-aso="fade-up" className=" w-[290px] bg-[#F4F7F7]">
                     <div className="relative">
                     <img className="" src="https://live.themewild.com/loveo/assets/img/service/02.jpg" alt="" />
                     <div className="absolute bottom-[-25px] right-5">
@@ -37,7 +45,7 @@ const HowItWork = () => {
                     </div>
                 </div>
                 {/* 3rd div */}
-                <div className=" w-[290px] bg-[#F4F7F7]">
+                <div data-aso="slide-up" className=" w-[290px] bg-[#F4F7F7]">
                     <div className="relative">
                     <img className="" src="https://live.themewild.com/loveo/assets/img/service/01.jpg" alt="" />
                     <div className="absolute bottom-[-25px] right-5">
