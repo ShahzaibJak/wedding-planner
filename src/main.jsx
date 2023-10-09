@@ -15,11 +15,14 @@ import Register from './Pages/Register/Register';
 import AuthProvider from './AuthProvider';
 import ServiceDetails from './Pages/Service/ServiceDetails';
 import PrivetRouter from './Root/PrivetRouter';
+import ErrorPage from './Pages/ErrorPage/ErrorPage';
+import Gallery from './Pages/Gallery/Gallery';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
@@ -42,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element:<Register></Register>
+      },
+      {
+        path: '/gallery',
+        element: <PrivetRouter><Gallery></Gallery></PrivetRouter>
       },
       {
         path: '/service-details/:id',

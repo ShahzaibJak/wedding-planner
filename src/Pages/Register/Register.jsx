@@ -1,14 +1,15 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../useAuthContext";
 import toast from 'react-hot-toast';
 
 
 
-const Register = () => {
 
+const Register = () => {
+  
   const navigate = useNavigate()
 
-    const {createUser, user} = useAuthContext()
+    const {createUser, user, userProfile} = useAuthContext()
  console.log(user);
     const onSubmit = (e)=> {
 
@@ -16,6 +17,7 @@ const Register = () => {
     const email = e.target.email.value
     const password = e.target.password.value
     const name = e.target.name.value
+    const image = e.target.url.value
 
     const validation = /^(?=.*[!@#$%^&*()_+{}[\]:;<>,.?~\\-])(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6,}$/.test(password);
 
@@ -27,11 +29,16 @@ const Register = () => {
         return toast.error('One capital letter, Special characters and 6 characters Required');
       }
 
-    console.log(email, password, name);
+    
     createUser(email, password )
-    .then(()=>{
+
+    .then(userCredential=>{
+const user = userCredential.user;
+        
+userProfile(user, name, image)
+
         toast.success('Account Created Successfully')
-        navigate('/')
+        navigate('/');
     })
     .catch((error) => {
         toast.error(`${error}`)
@@ -61,6 +68,13 @@ const Register = () => {
             <span className="label-text">Email</span>
           </label>
           <input type="email" name="email" placeholder="Email" className="input input-bordered" required />
+        </div>
+        {/* img */}
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Image</span>
+          </label>
+          <input type="text" name="url" placeholder="Image Url" className="input input-bordered" required />
         </div>
         <div className="form-control">
           <label className="label">

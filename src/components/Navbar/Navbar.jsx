@@ -14,6 +14,7 @@ const Navbar = () => {
         <li> <NavLink to='/'>Home</NavLink> </li>
         <li> <NavLink to='/service'>Service</NavLink> </li>
         <li> <NavLink to='/about-us'>About us</NavLink> </li>
+        <li> <NavLink to='/gallery'>Gallery</NavLink> </li>
         
     </>
 
@@ -45,8 +46,9 @@ const Navbar = () => {
   <div className="navbar-end">
 {
     user? <div className="flex gap-4">
-        <div className="w-12 h-12 bg-slate-600 rounded-full flex justify-center items-center">
-    <img src="/public/10.png" alt="" />
+        <div className="rounded-full flex justify-center items-center gap-2 ">
+          <p>{user.displayName.slice(0,8)} </p>
+    <img className="w-12 h-12 rounded-full" src={user.photoURL} alt="" />
 </div>
 <button onClick={signOut}  className="btn">Logout</button>
     </div>

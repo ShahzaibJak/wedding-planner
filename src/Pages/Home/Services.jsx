@@ -22,7 +22,10 @@ const services = useLoaderData()
     </div>
     <h2 className="text-2xl font-bold py-5">{ser.title}</h2>
     <p className="pb-5">{ser.des}</p>
+    <div className="flex justify-between">
     <Link to={`/service-details/${ser.id}`} className=" font-bold text-[#69A032] ">Read More <ImCircleRight className="inline"/> </Link>
+    <div className="p-2 rounded-lg  bg-[#69A032]"><p className="font-bold text-white ">Price: {ser.price}</p></div>
+    </div>
     </div>)
     
 }
