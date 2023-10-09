@@ -29,7 +29,15 @@ const Register = () => {
 
     console.log(email, password, name);
     createUser(email, password )
-    toast.success('Successfully toasted!')
+    .then(()=>{
+        toast.success('Account Created Successfully')
+    })
+    .catch((error) => {
+        toast.error(`${error}`)
+    })
+    e.target.email.value = '';
+      e.target.password.value = '';
+      e.target.name.value = '';
 
     
     }

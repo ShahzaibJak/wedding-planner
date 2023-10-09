@@ -18,7 +18,7 @@ const {googleSignIn, logInWithPass} = useAuthContext();
 const handledGoogleSignIn = ()=>{
     googleSignIn()
     .then(()=>{
-        toast('mama ok')
+        toast.success('Login Successful')
     })
     .catch((error) =>{
         console.log(error);
@@ -32,7 +32,14 @@ const onSubmit = (e)=> {
 
 
     logInWithPass(email, password)
-    console.log(email, password);
+    .then(()=>{
+      toast.success('Login Successful')
+  })
+  .catch((error) =>{
+      console.log(error);
+  })
+  e.target.email.value = '';
+      e.target.password.value = '';
 }
 
  
