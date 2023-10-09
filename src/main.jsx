@@ -17,6 +17,7 @@ import ServiceDetails from './Pages/Service/ServiceDetails';
 import PrivetRouter from './Root/PrivetRouter';
 import ErrorPage from './Pages/ErrorPage/ErrorPage';
 import Gallery from './Pages/Gallery/Gallery';
+import Shop from './Pages/Shop/Shop';
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       {
         path: '/gallery',
         element: <PrivetRouter><Gallery></Gallery></PrivetRouter>
+      },
+      {
+        path: '/shop',
+        element: <PrivetRouter><Shop></Shop> </PrivetRouter>
       },
       {
         path: '/service-details/:id',

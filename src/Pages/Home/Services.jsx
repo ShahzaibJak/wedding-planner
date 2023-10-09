@@ -1,9 +1,14 @@
 import { Link, useLoaderData,  } from "react-router-dom";
 import { ImCircleRight } from "react-icons/im";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 const Services = () => {
 
-    
+    useEffect(()=>{
+        Aos.init()
+    },[])
 const services = useLoaderData()
 
     
@@ -13,10 +18,10 @@ const services = useLoaderData()
             <h2 className="text-[44px] pt-16 pb-12 text-center">Our Awesome Services
 </h2>
 
-<div className="grid grid-cols-3 px-14 gap-7 py-14">
+<div data-aso="fade-up" className="grid grid-cols-3 px-14 gap-7 py-14">
    
 {
-    services.map(ser => <div key={ser.id} className="px-[30px] py-[45px] bg-white">
+    services.map(ser => <div data-aso="fade-up" key={ser.id} className="px-[30px] py-[45px] bg-white">
     <div className="p-6 rounded-full bg-[#F5F8EF] w-max">
         <img src={ser.icon} alt=""/>
     </div>

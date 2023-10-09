@@ -28,7 +28,7 @@ setDes3(newDes3)
 
     
     return (
-        <div className="container mx-auto pb-20">
+        <div className="container mx-auto pb-52">
             <h2 className="text-5xl pt-6 pb-10 font-bold text-center"> 
                     Our {details.title} Service
                 </h2>
@@ -39,8 +39,13 @@ setDes3(newDes3)
                 <h2 className="text-4xl font-bold pt-10 pb-5">{details.title}</h2>
                 <p>{des}</p>
                 <p className="pt-6">{des2}</p>
-                
+                <p className="pt-8 text-3xl font-semibold ">Our {details.title} Cost <span className="font-bold text-[#69A032]">{details.price}</span></p>
+                <div>
+
                 </div>
+                </div>
+
+                {/* img */}
                 <div className=" flex justify-center w-2/4">
                 <img className="" src={details.cover} alt="" />
                 </div>

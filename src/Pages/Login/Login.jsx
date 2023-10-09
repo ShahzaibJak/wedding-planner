@@ -72,12 +72,12 @@ const onSubmit = (e)=> {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button type="submit" className="btn btn-primary ">Login</button>
+          <button type="submit" className="btn bg-[#69A032] text-white">Login</button>
         </div>
         
       </form>
-      <div className="pt-6 flex justify-center text-center">
-            <button onClick={handledGoogleSignIn}> Register with <span><FcGoogle className="inline text-3xl"> </FcGoogle></span> </button>
+      <div className="pt-6 flex justify-center text-center ">
+            <button className=" py-2 px-3 rounded-lg border border-[#69A032]" onClick={handledGoogleSignIn}> Register with <span><FcGoogle className="inline text-3xl"> </FcGoogle></span> </button>
         </div>
     </div>
   </div>

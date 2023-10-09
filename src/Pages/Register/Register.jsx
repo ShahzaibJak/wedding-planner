@@ -87,7 +87,7 @@ userProfile(user, name, image)
           </label>
         </div>
         <div className="form-control mt-6">
-          <button type="submit" className="btn btn-primary ">Register</button>
+          <button type="submit" className="btn bg-[#69A032] text-white">Register</button>
         </div>
       </form>
       
