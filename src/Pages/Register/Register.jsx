@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../useAuthContext";
 import toast from 'react-hot-toast';
 
@@ -6,7 +6,7 @@ import toast from 'react-hot-toast';
 
 const Register = () => {
 
-    
+  const navigate = useNavigate()
 
     const {createUser, user} = useAuthContext()
  console.log(user);
@@ -31,6 +31,7 @@ const Register = () => {
     createUser(email, password )
     .then(()=>{
         toast.success('Account Created Successfully')
+        navigate('/')
     })
     .catch((error) => {
         toast.error(`${error}`)

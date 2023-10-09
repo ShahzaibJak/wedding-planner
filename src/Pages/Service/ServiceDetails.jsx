@@ -26,7 +26,7 @@ setDes3(newDes3)
 
     
 
-    console.log(details.description);
+    
     return (
         <div className="container mx-auto">
             <div>
