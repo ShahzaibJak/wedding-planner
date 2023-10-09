@@ -1,8 +1,14 @@
+import Services from "../Home/Services";
+
 
 const Service = () => {
+
+    
     return (
-        <div>
-            <h2>This is service page that you are looking</h2>
+        <div className="pb-52 bg-[#F7FAF4] w-full h-full">
+            <div className="w-2/4 h-2/4 mx-auto my-auto flex justify-center">
+            <Services></Services>
+            </div>
         </div>
     );
 };
