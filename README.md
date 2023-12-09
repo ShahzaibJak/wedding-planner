@@ -12,3 +12,11 @@ This is wedding event management website. All wedding service available in this 
 - User Account Login
 - Privet Router 
 - Clean Web View
+
+## Technology
+- HTML
+- CSS
+- Tailwind
+- JS
+- React
+- Firebase
