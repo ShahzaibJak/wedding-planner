@@ -10,15 +10,14 @@ const HeroSection = () => {
                 <div id="slide1" className="carousel-item relative w-full">
                     <div className="flex justify-end items-center mx-auto gap-4 w-full">
                         <div className="flex flex-col px-20 w-2/4">
-                            <p className="text-lg font-medium">We AreSkilled & Expert
+                            <p className="text-lg font-medium">Skilled & Expert
                             </p>
-                            <h2 className="text-6xl py-6 font-bold">Wedding Planner For Couples</h2>
-                            <p className="pb-6 mr-24">There are many variations of passages orem psum available but the majority have
-                                suffered alteration</p>
-                            <Link to='/login'><button className="btn btn-primary w-max">Learn More</button></Link>
+                            <h2 className="text-5xl py-4 font-bold">Event Planning & Management</h2>
+                            <p className="pb-6 mr-24 text-sm">We provide detailed planning and management for all your events, be it weddings, birthdays or any other celebration, we make it Perfect!</p>
+                            <Link to='/about-us'><button className="btn btn-primary w-max">Learn More</button></Link>
                         </div>
                         <div className="w-2/4 h-full">
-                            <img src="https://images.pexels.com/photos/1405674/pexels-photo-1405674.jpeg" className="" />
+                            <img src="/public/hero-3.jpg" className="" />
                         </div>
                     </div>
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -28,17 +27,17 @@ const HeroSection = () => {
                 </div>
                 {/* slider 2 */}
                 <div id="slide2" className="carousel-item relative w-full">
-                <div className="flex justify-end items-center mx-auto gap-4 w-full">
+                    <div className="flex justify-end items-center mx-auto gap-4 w-full">
                         <div className="flex flex-col px-20 w-2/4">
-                            <p className="text-lg font-medium">We AreSkilled & Expert
+                            <p className="text-lg font-medium">Skilled & Expert
                             </p>
-                            <h2 className="text-6xl py-6 font-bold">Wedding Planner For Couples</h2>
-                            <p className="pb-6">There are many variations of passages orem psum available but the majority have
-                                suffered alteration</p>
-                            <Link to='/login'><button className="btn btn-primary w-max">Join Now</button></Link>
+                            <h2 className="text-5xl py-6 font-bold">Wedding Planner For Couples</h2>
+                            <p className="pb-6 text-sm">With years of experience, planning 1000x of weddings, we have the know how to make your special day <i>perfect</i>, just the way you want!</p>
+                            <Link to='/about-us'><button className="btn btn-primary w-max">Learn More</button></Link>
                         </div>
                         <div className="w-2/4 h-full">
-                            <img className="h-full"  src="https://images.pexels.com/photos/1806360/pexels-photo-1806360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  />
+                            <img src="/public/hero.jpg" className="" />
+
                         </div>
                     </div>
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -48,17 +47,17 @@ const HeroSection = () => {
                 </div>
                 {/* slider 3 */}
                 <div id="slide3" className="carousel-item relative w-full">
-                <div className="flex justify-end items-center mx-auto gap-4 w-full">
+                    <div className="flex justify-end items-center mx-auto gap-4 w-full">
                         <div className="flex flex-col px-20 w-2/4">
-                            <p className="text-lg font-medium">We AreSkilled & Expert
+                            <p className="text-lg font-medium">Skilled & Expert Planners for all
                             </p>
-                            <h2 className="text-6xl py-6 font-bold">Wedding Planner For Couples</h2>
-                            <p className="pb-6">There are many variations of passages orem psum available but the majority have
-                                suffered alteration</p>
-                            <Link to='/login'><button className="btn btn-primary w-max">Join Now</button></Link>
+                            <h2 className="text-6xl py-6 font-bold">Celebrations</h2>
+                            <p className="pb-6">Celebrations are meant to be celebrated! Let us take over the hassle & planning and enjoy your special moments!</p>
+                            <Link to='/about-us'><button className="btn btn-primary w-max">Learn More</button></Link>
                         </div>
                         <div className="w-2/4 h-full">
-                            <img className="h-full" src="https://images.pexels.com/photos/6503844/pexels-photo-6503844.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  />
+                            <img src="/public/hero2.jpg" className="" />
+
                         </div>
                     </div>
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
