@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Certificate from "./docs/certificate.pdf";
 import Bond from "./docs/bond.pdf";
 import Stock from "./docs/stock-cert.pdf";
+import Financial from "./docs/financials2.pdf";
 
 const AboutUs = () => {
     return (
@@ -9,9 +10,9 @@ const AboutUs = () => {
             <div className="flex justify-center items-center w-full px-8 mx-auto">
                 <div className="w-2/4 pr-36">
                     <h2 className="font-bold text-xl">ABOUT US</h2>
-                    <h2 className="font-bold text-[44px] pb-5">We Make Your Every Moment Special
+                    <h2 className="font-bold text-[40px] pb-5">We Make Your Special Moment Is <i>Perfect</i>
                     </h2>
-                    <p className="pb-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even.</p>
+                    <p className="pb-6">We, at Perfect Planning, make sure your special moments are perfect!. With thorough planning, attention to detail and precise execution, we take care of the details so you can enjoy your moments.</p>
                     <Link to='/about-us'><button className="font-semibold  btn btn-primary">Read More</button></Link>
                 </div>
                 <div className="flex w-2/4 gap-6">
@@ -22,7 +23,7 @@ const AboutUs = () => {
                 <h1 className="text-5xl font-bold p-6">
                     Organizational Structure
                 </h1>
-                <img className="rounded-md" src="/public/org-struct.jpg" alt="Organizational Structure" />
+                <img className="rounded-md" src="https://ucarecdn.com/773c3d54-e1a2-441a-ba04-9cfd43d9e2b7/orgstruct.jpg" alt="Organizational Structure" />
             </div>
 
             <div className="flex flex-col items-center justify-start gap-4 p-2 py-12 w-full bg-neutral-50">
@@ -61,6 +62,17 @@ const AboutUs = () => {
 
                         </h1>
                         <a href={Stock} without rel="noopener noreferrer" target="_blank"><button className="text-white font-semibold bg-blue-600 rounded-md w-max px-4 py-2">View</button></a>
+                    </div>
+
+                    <div className="p-2 pb-12 rounded-md bg-yellow-50 flex flex-col gap-6 items-start justify-start w-1/4">
+                        <h1 className="text-2xl font-semibold">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7 inline">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" />
+                            </svg>
+                            Financial Statements
+
+                        </h1>
+                        <a href={Financial} without rel="noopener noreferrer" target="_blank"><button className="text-white font-semibold bg-blue-600 rounded-md w-max px-4 py-2">View</button></a>
                     </div>
                 </div>
             </div>

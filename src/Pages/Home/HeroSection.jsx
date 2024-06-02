@@ -17,7 +17,7 @@ const HeroSection = () => {
                             <Link to='/about-us'><button className="btn btn-primary w-max">Learn More</button></Link>
                         </div>
                         <div className="w-2/4 h-full">
-                            <img src="/public/hero-3.jpg" className="" />
+                            <img src="https://ucarecdn.com/a6ce7f14-3117-40e6-ba6c-e48b4e4df751/hero3.jpg" className="" />
                         </div>
                     </div>
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -36,7 +36,7 @@ const HeroSection = () => {
                             <Link to='/about-us'><button className="btn btn-primary w-max">Learn More</button></Link>
                         </div>
                         <div className="w-2/4 h-full">
-                            <img src="/public/hero.jpg" className="" />
+                            <img src="https://ucarecdn.com/5c0beaae-230b-467b-9a5b-34ce5c34c0db/hero.jpg" className="" />
 
                         </div>
                     </div>
@@ -56,7 +56,7 @@ const HeroSection = () => {
                             <Link to='/about-us'><button className="btn btn-primary w-max">Learn More</button></Link>
                         </div>
                         <div className="w-2/4 h-full">
-                            <img src="/public/hero2.jpg" className="" />
+                            <img src="https://ucarecdn.com/9341afa8-659f-4bc0-8779-5b680419ba5b/hero2.jpg" className="" />
 
                         </div>
                     </div>

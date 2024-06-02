@@ -32,7 +32,7 @@ const HowItWork = () => {
                 {/* 2nd div */}
                 <div data-aso="fade-up" className=" w-[290px] bg-[#F4F7F7]">
                     <div className="relative">
-                        <img className="h-[242px]" src="public/hero-3.jpg" alt="" />
+                        <img className="h-[242px]" src="https://ucarecdn.com/a6ce7f14-3117-40e6-ba6c-e48b4e4df751/hero3.jpg" alt="" />
                         <div className="absolute bottom-[-25px] right-5">
                             <span className="flex items-center justify-center bg-[#69A032] w-[50px] h-[50px] rounded-full font-bold  text-lg text-white">02</span>
                         </div>

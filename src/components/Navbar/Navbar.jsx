@@ -32,7 +32,7 @@ const Navbar = () => {
           </ul>
         </div>
         <a href="/" className="btn btn-ghost normal-case text-xl">
-          <img className="h-8 w-24" src="/public/logo.png" alt="Perfect Planning" />
+          <img className="h-8 w-24" src="https://ucarecdn.com/658cc998-5f4a-4e8e-bb43-5f99132e56a2/logo.png" alt="Perfect Planning" />
         </a>
       </div>
       <div className="navbar-center w-1/2 hidden lg:flex lg:flex-row lg:items-center lg:justify-end">
